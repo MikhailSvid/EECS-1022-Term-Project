@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><!--makes background a image and keeps the buttons alligned to bottom-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Logo image-->
+    <ImageView
+        android:layout_width="258dp"
+        android:layout_height="246dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="53dp"
+        android:src="@drawable/Logo" />
+
+
+    <LinearLayout
+        android:layout_width="417dp"
+        android:layout_height="389dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-7dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <!--makes orientation vertical-->
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Welcome"
+                android:textColor="#ADD8E6"
+                android:textSize="36dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Username"
+                android:textColor="#ADD8E6"
+                android:textSize="18dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Password"
+                android:textColor="#ADD8E6"
+                android:textSize="18dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/Restore"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:backgroundTint="#ffffff"
+                android:gravity="center_horizontal"
+                android:onClick="Restore"
+                android:text="Forgot Password"
+                android:textColor="#0000FF"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="323dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#86ceeb"
+                android:onClick="Login"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/create"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:backgroundTint="#ffffff"
+                android:gravity="center_horizontal"
+                android:onClick="Create"
+                android:text="Create New Account"
+                android:textColor="#0000FF"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
