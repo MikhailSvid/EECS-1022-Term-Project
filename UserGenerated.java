@@ -13,12 +13,7 @@ public class UserGenerated extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_generated);
     }
-    // sends you to generatepass screen
-    public void generate(View view) {
-        Intent i = new Intent(this,
-                generated.class);
-        startActivity(i);
-    }
+
     // sends you to home screen
     public void Save(View view) {
         Intent i = new Intent(this,
