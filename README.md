@@ -333,3 +333,66 @@
 
 
 </RelativeLayout>
+NEW PASSWORD SCREEN!!!!
+<?xml version="1.0" encoding="utf-8"?><!--makes background a image and keeps the buttons alligned to bottom-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--creates scrollview-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="41dp"
+        android:text="Your Password"
+        android:textColor="#ADD8E6"
+        android:textSize="36dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_marginTop="41dp"
+                android:text=" Press the button to create/generate a new password!"
+                android:textColor="#ADD8E6"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="134dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="210dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="14dp"
+                    android:onClick="add"
+                    android:src="@drawable/Add" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
